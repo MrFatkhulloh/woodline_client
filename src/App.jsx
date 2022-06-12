@@ -24,12 +24,12 @@ function App() {
   </thead>
   <tbody>
     {
-      orders && orders?.length && orders.map(o => (
-        <tr>
-          <td key={o[0]} data-column="First Name">{o[1]}</td>
-          <td key={o[0]} data-column="Last Name">{o[2]}</td>
-          <td key={o[0]} data-column="Job Title">{o[3]}</td>
-          <td key={o[0]} data-column="Twitter">{o[4]}</td>
+      orders && orders?.length && orders.map((o, i) => (
+        <tr  key={o[0]}>
+          <td data-column="First Name">{o[1]}</td>
+          <td data-column="Last Name">{o[2]}</td>
+          <td data-column="Job Title">{o[3]}</td>
+          <td data-column="Twitter">{o[4]}</td>
         </tr>
       ))
     }    
