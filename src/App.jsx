@@ -29,7 +29,7 @@ function App() {
           <td data-column="First Name">{o[1]}</td>
           <td data-column="Last Name">{o[2]}</td>
           <td data-column="Job Title">{o[3]}</td>
-          <td data-column="Twitter">{o[4]}</td>
+          <td data-column="Twitter">{o[4].split(' ').join(' or ')}</td>
         </tr>
       ))
     }    
